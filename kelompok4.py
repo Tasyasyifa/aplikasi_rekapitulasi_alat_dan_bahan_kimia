@@ -437,21 +437,20 @@ if (add_radio == "Bahan"):
     option= tab1, tab2= st.tabs(["Padat","Cair"])
     with tab1:
         if st.checkbox("NaOH"):
-                NaOH= st.number_input('Bahan Masuk',0,1000,100) 
-                harga = st.number_input('Bahan Terpakai',0,1000) 
-                akhirNaOH=NaOH-harga
-                st.write('Stok Tersedia Sebanyak', akhirNaOH, 'gram')
-                def load_data():
-                    return pd.DataFrame(
-                        {
-                            "Bahan Masuk": [NaOH],
-                            "Bahan Terpakai": [harga],
-                            "Jumlah Barang": [akhiRNaOH],
+            NaOH= st.number_input('Bahan Masuk',0,1000,100) 
+            harga = st.number_input('Bahan Terpakai',0,1000) 
+            akhirNaOH=NaOH-harga
+            st.write('Stok Tersedia Sebanyak', akhirNaOH, 'gram')
+            def load_data():
+                return pd.DataFrame(
+                    {
+                        "Bahan Masuk": [NaOH],
+                        "Bahan Terpakai": [harga],
+                        "Jumlah Barang": [akhirNaOH],
                         }
-                    )
+                     )
                 df = load_data()
                 st.dataframe(df)
-        
             
         if st.checkbox("K2Cr2O7"):
                 K2Cr2O7= st.number_input('Bahan Masuk',0,1000,100) 
@@ -467,8 +466,8 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)
+                
         if st.checkbox("Na2B4O7"):
                 Na2B4O7= st.number_input('Bahan Masuk',0,1000,100) 
                 harga = st.number_input('Bahan Terpakai',0,1000) 
@@ -479,11 +478,10 @@ if (add_radio == "Bahan"):
                         {
                             "Bahan Masuk": [Na2B4O7],
                             "Bahan Terpakai": [harga],
-                            "Jumlah Barang": [akhiNa2B4O7],
+                            "Jumlah Barang": [akhirNa2B4O7],
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)
             
         if st.checkbox("KMnO4"):
@@ -500,7 +498,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)
         if st.checkbox("AgNO3"):
                 AgNO3= st.number_input('Bahan Masuk',0,1000,100) 
@@ -516,7 +513,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)
         if st.checkbox("CaCO3"):
                 CaCO3= st.number_input('Bahan Masuk',0,1000,100) 
@@ -532,7 +528,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)
             
         if st.checkbox("Na2CO3"):
@@ -549,7 +544,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)
         if st.checkbox("NaCl"):
                 NaCl= st.number_input('Bahan Masuk',0,1000,100) 
@@ -565,7 +559,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)
     with tab2:
         Bahan = st.text("Pilih Bahan Yang Akan Di Input:")
@@ -583,7 +576,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)  
             
         if st.checkbox("CH3COOH"):
@@ -600,7 +592,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)  
             
         if st.checkbox("H2C2O4"):
@@ -617,7 +608,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)    
             
         if st.checkbox("AgOH"):
@@ -634,7 +624,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)    
             
         if st.checkbox("H2SO4"):
@@ -651,7 +640,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)    
             
         if st.checkbox("Aquadest"):
@@ -668,7 +656,6 @@ if (add_radio == "Bahan"):
                         }
                     )
                 df = load_data()
-                st.dataframe
                 st.dataframe(df)  
    
             
