@@ -22,7 +22,7 @@ with st.sidebar:
     st.sidebar.markdown("---")
     st.sidebar.header("Input Stok")
     add_radio = st.radio(
-        "Masukkan stok",
+        "Masukkan stok Alat atau Bahan",
         ("Alat", "Bahan")) 
     st.sidebar.markdown("---")
 
