@@ -655,7 +655,3 @@ if (add_radio == "Bahan"):
                     )
                 df = load_data()
                 st.dataframe(df)  
-   
-            
-
-
